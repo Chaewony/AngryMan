@@ -74,4 +74,5 @@ Plugins/*/Intermediate/*
 DerivedDataCache/*
 
 ######################################Additional
-Content/Fantastic_Village_Pack/maps/*
+Content/Fantastic_Village_Pack/maps/map_village_night.umap
+Content/Fantastic_Village_Pack/maps/map_village_night_BuiltData.uasset
