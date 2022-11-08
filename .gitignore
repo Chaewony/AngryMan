@@ -72,7 +72,3 @@ Plugins/*/Intermediate/*
 
 # Cache files for the editor to use
 DerivedDataCache/*
-
-######################################Additional
-Content/Fantastic_Village_Pack/maps/map_village_night.umap
-Content/Fantastic_Village_Pack/maps/map_village_night_BuiltData.uasset
