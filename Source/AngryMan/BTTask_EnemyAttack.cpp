@@ -3,6 +3,7 @@
 
 #include "BTTask_EnemyAttack.h"
 #include "PlayerCharacter.h"
+#include "EnemyCharacter.h"
 #include "EnemyAIController.h"
 
 UBTTask_EnemyAttack::UBTTask_EnemyAttack()
@@ -14,15 +15,15 @@ EBTNodeResult::Type UBTTask_EnemyAttack::ExecuteTask(UBehaviorTreeComponent& Own
 {
 	EBTNodeResult::Type Result = Super::ExecuteTask(OwnerComp, NodeMemory);
 	
-	auto PlayerCharacter = Cast<APlayerCharacter>(OwnerComp.GetAIOwner()->GetPawn());
-	if (PlayerCharacter == nullptr)
+	auto EnemyCharacter = Cast<AEnemyCharacter>(OwnerComp.GetAIOwner()->GetPawn());
+	if (EnemyCharacter == nullptr)
 		return EBTNodeResult::Failed;
 
-	PlayerCharacter->Attack();
+	EnemyCharacter->Attack();
 	bIsAttacking = true;
 
 	//OnAttckEnd가 broadcast되면 이 람다함수를 호출해줘
-	PlayerCharacter->OnAttckEnd.AddLambda([this]()
+	EnemyCharacter->OnAttckEnd.AddLambda([this]()
 		{
 			bIsAttacking = false;
 		});

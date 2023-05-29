@@ -4,6 +4,7 @@
 #include "BTDecorator_EnemyCanAttack.h"
 #include "EnemyAIController.h"
 #include "PlayerCharacter.h"
+#include "EnemyCharacter.h"
 #include "BehaviorTree/BlackboardComponent.h"
 
 UBTDecorator_EnemyCanAttack::UBTDecorator_EnemyCanAttack()

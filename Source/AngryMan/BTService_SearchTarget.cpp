@@ -4,6 +4,7 @@
 #include "BTService_SearchTarget.h"
 #include "EnemyAIController.h"
 #include "PlayerCharacter.h"
+#include "EnemyCharacter.h"
 #include "BehaviorTree/BlackboardComponent.h"
 #include "DrawDebugHelpers.h"
 

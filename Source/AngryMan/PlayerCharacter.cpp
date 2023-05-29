@@ -53,8 +53,8 @@ APlayerCharacter::APlayerCharacter()
 	HpBar->SetDrawSize(FVector2D(200.f, 50.f));
 
 	//AI
-	AIControllerClass = AEnemyAIController::StaticClass();
-	AutoPossessAI = EAutoPossessAI::PlacedInWorldOrSpawned;
+//	AIControllerClass = AEnemyAIController::StaticClass();
+//	AutoPossessAI = EAutoPossessAI::PlacedInWorldOrSpawned;
 }
 
 // Called when the game starts or when spawned
